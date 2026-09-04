@@ -1,0 +1,103 @@
+:root {
+  /* Government of India Official Color Palette */
+  --goi-saffron: #FF9933;
+  --goi-white: #FFFFFF;
+  --goi-green: #138808;
+  --goi-navy: #000080;
+  --goi-blue: #1C4587;
+  --goi-gold: #C9A961;
+
+  /* Semantic colors */
+  --primary: #1C4587;
+  --primary-dark: #0D2A54;
+  --primary-light: #E8EEF7;
+  --secondary: #138808;
+  --accent: #FF9933;
+  --background: #F5F5F5;
+  --surface: #FFFFFF;
+  --text-primary: #1A1A1A;
+  --text-secondary: #5F6368;
+  --border: #DADCE0;
+  --border-light: #E8EAED;
+
+  /* Status colors */
+  --status-success: #0F9D58;
+  --status-warning: #F9AB00;
+  --status-error: #D93025;
+  --status-info: #1A73E8;
+
+  /* Typography */
+  --font-primary: "Noto Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-hindi: "Tiro Devanagari Hindi", serif;
+
+  /* Spacing */
+  --header-height: 80px;
+  --sidebar-width: 260px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--text-primary);
+  font-family: var(--font-primary);
+  font-size: 14px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+button {
+  font-family: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}
+
+/* Scrollbar styling for webkit browsers */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #DADCE0;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #BDC1C6;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
